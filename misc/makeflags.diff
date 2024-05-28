@@ -1,0 +1,26 @@
+diff --git a/lib/petsc/conf/rules b/lib/petsc/conf/rules
+index c86aadea25a..7c61e7a0901 100644
+--- a/lib/petsc/conf/rules
++++ b/lib/petsc/conf/rules
+@@ -53,7 +53,7 @@ ${PETSC_DIR}/${PETSC_ARCH}/tests/testfiles:
+ 	@${MKDIR} -p ${PETSC_DIR}/${PETSC_ARCH}/tests && touch -t 197102020000 ${PETSC_DIR}/${PETSC_ARCH}/tests/testfiles
+ 
+ libs: ${PETSC_DIR}/${PETSC_ARCH}/lib/petsc/conf/files ${PETSC_DIR}/${PETSC_ARCH}/tests/testfiles
+-	+@cd ${PETSC_DIR} && MAKEFLAGS="-j$(MAKE_NP) -l$(MAKE_LOAD) $(MAKEFLAGS)" ${OMAKE_PRINTDIR} -f gmakefile ${MAKE_PAR_OUT_FLG} V=${V} libs
++	+@cd ${PETSC_DIR} && MAKEFLAGS="-j$(MAKE_NP) -l$(MAKE_LOAD) $(MAKEFLAGS:w=)" ${OMAKE_PRINTDIR} -f gmakefile ${MAKE_PAR_OUT_FLG} V=${V} libs
+ 
+ # Does nothing; needed for some rules that require actions.
+ foo:
+diff --git a/makefile b/makefile
+index c155b4463e5..ff65793e898 100644
+--- a/makefile
++++ b/makefile
+@@ -127,7 +127,7 @@ info:
+ 	-@echo "Using mpiexec: ${MPIEXEC}"
+ 	-@echo "------------------------------------------"
+ 	-@echo "Using MAKE: $(MAKE)"
+-	-@echo "Using MAKEFLAGS: -j$(MAKE_NP) -l$(MAKE_LOAD) $(MAKEFLAGS)"
++	-@echo "Using MAKEFLAGS: -j$(MAKE_NP) -l$(MAKE_LOAD) $(MAKEFLAGS:w=)"
+ 	-@echo "=========================================="
+ 
+ #
