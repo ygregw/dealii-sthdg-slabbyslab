@@ -70,7 +70,7 @@ convenient to assign it to an environment variable (better still, in your
 export P4EST_DIR=/path/to/p4est/p4est-sthdg
 ```
 
-## Installing PETSc
+## Installing deal.II
 
 1. [deal.II's own installation instructions](https://www.dealii.org/9.5.0/readme.html)
 
