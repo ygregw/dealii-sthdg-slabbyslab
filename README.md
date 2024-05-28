@@ -72,6 +72,8 @@ export P4EST_DIR=/path/to/p4est/p4est-sthdg
 
 ## Installing deal.II
 
+Useful link:
+
 1. [deal.II's own installation instructions](https://www.dealii.org/9.5.0/readme.html)
 
 ```shell
