@@ -14,9 +14,9 @@ The mathematical description of the implemented test problem can be found in
 paper](https://arxiv.org/abs/2308.12130).
 
 - A rotating Gaussian pulse:\
-	<img src="https://gregw.xyz/bkp/files/research/rot_pulse.gif" width="40%">
+	<img src="https://github.com/ygregw/dealii-sthdg-slabbyslab/blob/main/misc/rot_pulse.gif" width="40%">
 - Demo of the slab-by-slab approach:\
-	<img src="https://gregw.xyz/bkp/files/research/moving_slab.gif" width="40%">
+	<img src="https://github.com/ygregw/dealii-sthdg-slabbyslab/blob/main/misc/moving_slab.gif" width="40%">
 
 # Setting up deal.II
 
