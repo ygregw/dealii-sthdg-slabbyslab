@@ -13,9 +13,9 @@ The mathematical description of the implemented test problem can be found in
 **Section 6 - Numerical example** of [our
 paper](https://arxiv.org/abs/2308.12130).
 
-- A rotating Gaussian pulse:
+- A rotating Gaussian pulse:\
 	<img src="https://gregw.xyz/bkp/files/research/rot_pulse.gif" width="40%">
-- Demo of the slab-by-slab approach:
+- Demo of the slab-by-slab approach:\
 	<img src="https://gregw.xyz/bkp/files/research/moving_slab.gif" width="40%">
 
 # Setting up deal.II
