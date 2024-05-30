@@ -7,6 +7,17 @@ This repository contains deal.II codes implementing:
 - on deforming domains;
 - using the slab-by-slab approach.
 
+## Demos
+
+The mathematical description of the implemented test problem can be found in
+**Section 6 - Numerical example** of [our
+paper](https://arxiv.org/abs/2308.12130).
+
+- A rotating Gaussian pulse:
+	![A Rotating Gaussian Pulse](https://gregw.xyz/bkp/files/research/rot_pulse.gif)
+- Demo of the slab-by-slab approach:
+	![Slab by Slab](https://gregw.xyz/bkp/files/research/moving_slab.gif)
+
 # Setting up deal.II
 
 ## Installing PETSc
@@ -116,7 +127,7 @@ When successful, you should obtain executable `sthdg-advdif-slabbyslab`. It take
 3. `-c N`: sets N uniform refinement cycles;
 4. `-p N`: uses finite elements of polynomial degree N.
 
-The mathematical description of the implemented test problem can be found in **Section 6 - Numerical example** of [our paper](https://arxiv.org/abs/2308.12130). Here is a test run with 4 mpi processes and its output:
+Here is a test run with 4 mpi processes and its output:
 ```shell
 $ mpiexec -n 4 ./sthdg-advdif-slabbyslab -n 8 -c 3 -p 1 | tee n8c3p1.txt
 $ cat n8c3p1.txt
