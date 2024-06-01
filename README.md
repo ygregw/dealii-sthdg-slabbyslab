@@ -1,6 +1,6 @@
 # Space-time HDG on moving domains (slab-by-slab)
 
-This repository contains deal.II codes implementing:
+This repository contains [deal.II](https://dealii.org/) codes that implement:
 
 - the space-time hybridizable discontinuous Galerkin method;
 - for the advection-diffusion problem;
