@@ -129,7 +129,9 @@ When successful, you should obtain executable `sthdg-advdif-slabbyslab`. It take
 
 ## Example run
 
-Here is a test run with 4 mpi processes and its output:
+Here is a test run of the rotating Gaussian pulse problem with 10^{-8} being
+the diffusion paramter, 4 mpi processes, linear polynomial as the finite
+elements and its vtu output:
 
 ```shell
 $ mpiexec -n 4 ./sthdg-advdif-slabbyslab -n 8 -c 3 -p 1 | tee n8c3p1.txt
