@@ -127,7 +127,10 @@ When successful, you should obtain executable `sthdg-advdif-slabbyslab`. It take
 3. `-c N`: sets N uniform refinement cycles;
 4. `-p N`: uses finite elements of polynomial degree N.
 
+## Example run
+
 Here is a test run with 4 mpi processes and its output:
+
 ```shell
 $ mpiexec -n 4 ./sthdg-advdif-slabbyslab -n 8 -c 3 -p 1 | tee n8c3p1.txt
 $ cat n8c3p1.txt
@@ -205,3 +208,4 @@ cells slabs dofs       L2          sH1          tH1         dif-jp       adv-jp 
 | setup_system                    |        73 |      50.2s |       8.5% |
 | solve                           |        73 |       193s |        33% |
 +---------------------------------+-----------+------------+------------+
+```
